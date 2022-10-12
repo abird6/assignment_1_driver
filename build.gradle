@@ -34,6 +34,6 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     
     
-    // Adding GitHub depensnecy release v0.0.1
-    implementation 'com.github.abird6:ct417_assignment_1:v0.1.2'
+    // Adding GitHub depensnecy release v1.0.0
+    implementation 'com.github.abird6:assignment_1:v1.0.0'
 }

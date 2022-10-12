@@ -7,8 +7,8 @@
 
 package ct417_assignment_1_a_bird_driver;
 
-import ct417_assignment_1_a_bird.*;
-import ct417_assignment_1_a_bird.Module;
+import assignment_1.*;
+import assignment_1.Module;
 
 import java.util.List;
 
