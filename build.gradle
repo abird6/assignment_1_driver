@@ -10,6 +10,7 @@ plugins {
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
     id 'war'
+	id 'application'
 }
 
 repositories {
@@ -36,4 +37,8 @@ dependencies {
     
     // Adding GitHub dependency release v1.1.1
     implementation 'com.github.abird6:assignment_1:v1.1.1'
+}
+
+application {
+	mainClassName = 'ct417_assignment_1_a_bird_driver.CollegeRegistration'
 }
