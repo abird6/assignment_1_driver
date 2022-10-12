@@ -2,18 +2,15 @@
  * This is the CollegeRegistration class.
  * This class imports ct417_assignment_1_a_bird project
  * @author Anthony Bird
- *  
+ * email: a.bird6@universityofgalway.ie
  */
 
 package ct417_assignment_1_a_bird_driver;
 
 import ct417_assignment_1_a_bird.*;
 import ct417_assignment_1_a_bird.Module;
-
 import java.util.List;
-
 import org.joda.time.LocalDate;
-
 import java.util.ArrayList;
 
 public class CollegeRegistration {
@@ -23,6 +20,9 @@ public class CollegeRegistration {
 	Student studentA, studentB, studentC, studentD;					// 4 students will be registered: 1 for each course and an additional ECE student
 	Module eceModA, eceModB, eeeModA, eeeModB, csModA, csModB;		// 2 modules per course with some modules being used by multiple courses
 	
+	/**
+	 * Instantiating instance variables for printing
+	 */
 	public void objectSetup() {
 		
 		// object instantiation
@@ -70,6 +70,9 @@ public class CollegeRegistration {
 		
 	}
 	
+	/**
+	 * Formatting print statements and printing instantiated objects
+	 */
 	public void objectPrint() {
 		System.out.println("Printing in progress.....");
 		
@@ -127,12 +130,10 @@ public class CollegeRegistration {
 		for ( int i=1; i<studentD.getModules().size(); i++ ) {
 			System.out.printf(studentColumn, " ", " ", " ", " ", " ", studentD.getModules().get(i).getID(), studentD.getModules().get(i).getName());
 		}
-		System.out.println(studentRow);
-		
-		
+		System.out.println(studentRow);	
 	}
 	
-	// running program on...
+	// running driver program with...
 	public static void main(String[] args) {
 		CollegeRegistration cr = new CollegeRegistration();
 		cr.objectSetup();
